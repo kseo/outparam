@@ -6,12 +6,12 @@
 /// ```dart
 /// import 'package:outparam/outparam.dart';
 ///
-/// void foo(Out<int> i) {
+/// void foo(OutParam<int> i) {
 ///   i.value = 44;
 /// }
 ///
 /// main() {
-///   Out<int> i = new Out<int>();
+///   OutParam<int> i = new OutParam<int>();
 ///   foo(i);
 ///   print(i.value); // 44
 /// }
