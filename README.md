@@ -2,6 +2,9 @@
 
 A library providing support for out parameters in Dart.
 
+[![Build Status](https://travis-ci.org/kseo/outparam.svg)](https://travis-ci.org/kseo/outparam)
+[![Coverage Status](https://coveralls.io/repos/kseo/outparam/badge.svg?branch=master&service=github)](https://coveralls.io/github/kseo/outparam?branch=master)
+
 ## Usage
 
 A simple usage example:
