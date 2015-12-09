@@ -1,11 +1,21 @@
-// Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+// Copyright (c) 2015, Kwang Yul Seo. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 /// The outparam library.
 ///
-/// This is an awesome library. More dartdocs go here.
+/// ```dart
+/// import 'package:outparam/outparam.dart';
+///
+/// void foo(Out<int> i) {
+///   i.value = 44;
+/// }
+///
+/// main() {
+///   Out<int> i = new Out<int>();
+///   foo(i);
+///   print(i.value); // 44
+/// }
+/// ```
 library outparam;
-
-// TODO: Export any libraries intended for clients of this package.
 
 export 'src/outparam_base.dart';
