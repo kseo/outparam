@@ -1,19 +1,27 @@
 # outparam
 
-A library for Dart developers. It is awesome.
+A library providing support for out parameters in Dart.
 
 ## Usage
 
 A simple usage example:
 
-    import 'package:outparam/outparam.dart';
+```dart
+import 'package:outparam/outparam.dart';
 
-    main() {
-      var awesome = new Awesome();
-    }
+void foo(Out<int> i) {
+  i.value = 44;
+}
+
+main() {
+  Out<int> i = new Out<int>();
+  foo(i);
+  print(i.value); // 44
+}
+```
 
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/kseo/outparam/issues
